@@ -9,7 +9,7 @@ const MenuManagement = () => {
     const EditMenu = () => { navigate("/menu/editmenu") }
     // const ResetPassword = () => { navigate("/menu/") }
     const DeleteMenu = () => { navigate("/menu/deletemenu") }
-
+    
     return (
         <div className="App MenuContainer">
             <div className="ButtonContents">

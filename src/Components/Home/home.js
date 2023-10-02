@@ -31,6 +31,7 @@ class Home extends Component {
       </div>
     ));
 
+    
     return (
         <div className="login_background">
       <div className="BoxContainer">

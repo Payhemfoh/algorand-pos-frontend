@@ -27,7 +27,7 @@ export default function DeleteMenu() {
             item
         });
     }
-
+    
     return (
         <div className="login_background">
             <div className="UserFormContainer">
