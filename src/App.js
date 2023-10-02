@@ -6,6 +6,10 @@ import ResetPassword from './Components/User/resetpassword';
 import DeleteUser from './Components/User/deleteuser';
 import AddUser from './Components/User/adduser';
 import EditUser from './Components/User/edituser';
+import MenuManagement from './Components/Menu/menu';
+import DeleteMenu from './Components/Menu/deletemenu';
+import AddMenu from './Components/Menu/addmenu';
+import EditMenu from './Components/Menu/editmenu';
 import DeleteVoucher from './Components/Voucher/deletevoucher';
 import AddVoucher from './Components/Voucher/addvoucher';
 import GetVoucher from './Components/Voucher/getvoucher';
@@ -58,11 +62,18 @@ const App = () => {
       <NavBar role={role} />
       <Routes>
         <Route path="/" exact element={<Home />} />
+
+        <Route path="/menu" element={<MenuManagement />} />
+        <Route path="/menu/addmenu" element={<AddMenu />} />
+        <Route path="/menu/editmenu" element={<EditMenu />} />
+        <Route path="/menu/deletemenu" element={<DeleteMenu />} />
+
         <Route path="/voucher" element={<VoucherManagement />} />
         <Route path="/voucher/add" element={<AddVoucher />} />
         <Route path="/voucher/get" element={<GetVoucher />} />
         <Route path="/voucher/delete" element={<DeleteVoucher />} />
         <Route path="/voucher/redeem" element={<RedeemVoucher />} />
+
         <Route path="/user" element={<UserManagement />} />
         <Route path="/user/adduser" element={<AddUser />} />
         <Route path="/user/edituser" element={<EditUser />} />
