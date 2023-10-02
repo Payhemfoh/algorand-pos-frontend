@@ -9,6 +9,8 @@ export default function NavBar(role) {
 
     const ToHomePage = () => { navigate("/") }
 
+    const ToMenuPage = () => { navigate("/menu") }
+
     const Logout = () => { navigate("/logout") }
 
     const EditUserBlock = () => {
@@ -27,7 +29,7 @@ export default function NavBar(role) {
             <button className={"nav_block"} onClick={ToHomePage}>
                 Start Order
             </button>
-            <button className={"nav_block"} onClick={ToHomePage}>
+            <button className={"nav_block"} onClick={ToMenuPage}>
                 Edit Menu
             </button>
             <EditUserBlock />
